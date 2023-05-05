@@ -153,12 +153,7 @@ nav a:hover {
 }
 
 .grid_inicio .titulo_inicio {
-    background-color: #fff;
-    background-position: center;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    justify-self: center;
+    color: #fff;
     margin-top: 50px;
     font-size: 80px;
     grid-column: -2/-1;
@@ -188,11 +183,7 @@ nav a:hover {
 
 .flex .titulo {
     font-size: 80px;
-    background-color: #fff;
-    background-position: center;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: #fff;
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 80px;
@@ -286,14 +277,6 @@ nav a:hover {
 
 
 
-
-
-
-
-
-
-
-
 /* FOOTER */
 
 .pie_pagina {
@@ -372,6 +355,8 @@ nav a:hover {
 
 @media screen and (max-width:744px) {
 
+    /* HEADER */
+
     header {
         display: flex;
         flex-direction: column;
@@ -381,6 +366,8 @@ nav a:hover {
         padding: 10px;
         gap: 20px;
     }
+
+    /* MAIN INICIO */
 
     .grid_inicio {
         display: flex;
@@ -396,6 +383,57 @@ nav a:hover {
         padding-top: 10px;
     }
 
+    /* MAIN CATOLOGO */
+
+    .titulo {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 50px;
+        color: #fff;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* MAIN COMO COMPRAR / NOSOTROS */
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+    }
+    
+    .flex .titulo {
+        background-color: #fff;
+        background-position: center;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-size: 70px;
+    }
+
+    /* MAIN CONTACTO */
+
+    .contactos {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    /* FOOTER */
+
     .pie_pagina .grupo_1 {
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
@@ -405,3 +443,137 @@ nav a:hover {
     }
 }
 
+@media screen and (max-width:320px) {
+
+    /* HEADER */
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+        text-decoration: none;
+        margin-left: 50px;
+    }
+
+    /* MAIN INICIO */
+
+    .grid_inicio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 100px;
+    }
+
+    .grid_inicio .imagen_inicio {
+        width: 245px;
+        height: 320px;
+        justify-self: center;
+        border-radius: 50px;
+    }
+
+    .grid_inicio .titulo_inicio {
+        color: #fff;
+        margin-top: 50px;
+        font-size: 50px;
+        grid-column: -2/-1;
+        grid-row: 1/-1;
+    }
+
+    .grid_inicio .texto_inicio {
+        color: #fff;
+        font-size: 12px;
+    }
+
+    /* MAIN CATALOGO */
+
+    .titulo {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 45px;
+        color: #fff;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .prod_img {
+        height: 260px;
+        width: 260px;
+        border-radius: 30px;
+    }
+
+    .producto button {
+        position: absolute;
+        width: 140px;
+        height: 50px;
+        margin-left: 65px;
+        margin-top: 110px;
+        font-size: 13px;
+    }
+
+    /* MAIN COMO COMPRAR / NOSOTROS */
+    
+    .flex .titulo {
+        color: #fff;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-size: 50px;
+    }
+
+    .flex .texto {
+        font-size: 12px;
+        width: 80%;
+    }
+
+    .flex .img {
+        margin-top: 50px;
+        width: 90%;
+    }
+
+    /* CONTACTO */
+
+    .display_contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+
+    .display_contacto .texto {
+        color: white;
+        text-align: center;
+        font-size: 12px;
+        width: 100%;
+        padding: 100px;
+        padding-left: 55px;
+    }
+
+    .display_contacto .texto p {
+        width: 220px;
+    }
+
+    .contactos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
