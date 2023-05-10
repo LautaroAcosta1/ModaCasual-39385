@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Tinos:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap');
+
+
 body {
     background-color: #000000;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.28'%3E%3Cpolygon fill='%23060322' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%230d0644' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23130866' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%231a0b88' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23200EAA' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
@@ -36,7 +40,8 @@ header {
     border-radius: 90%;
 }
 
-a {
+.logo .nombre {
+    font-family: 'Tinos', serif;
     color: #efefef;
 }
 
@@ -54,6 +59,8 @@ nav a {
     font-size: 17px;
     list-style: none;
     text-decoration: none;
+    font-family: 'Rokkitt', serif;
+    color: #efefef;
 }
 
 nav a:hover {
@@ -69,6 +76,7 @@ nav a:hover {
     margin-top: 30px;
     font-size: 60px;
     color: #fff;
+    font-family: 'Tinos', serif;
 }
 
 .grid {
@@ -112,6 +120,7 @@ nav a:hover {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
+    font-family: 'Rokkitt', serif;
 }
 
 .producto button:hover {
@@ -123,11 +132,13 @@ nav a:hover {
 
 .producto h2 {
     color: #efefef;
+    font-family: 'Tinos', serif;
 }
 
 .producto p {
     font-size: 18px;
     color: #fff;
+    font-family: 'Rokkitt', serif;
 }
 
 
@@ -158,6 +169,7 @@ nav a:hover {
     font-size: 80px;
     grid-column: -2/-1;
     grid-row: 1/-1;
+    font-family: 'Tinos', serif;
 }
 
 .grid_inicio .texto_inicio {
@@ -167,6 +179,7 @@ nav a:hover {
     padding-top: 200px;
     justify-self: start;
     font-size: 17px;
+    font-family: 'Rokkitt', serif;
 }
 
 
@@ -187,12 +200,14 @@ nav a:hover {
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 80px;
+    font-family: 'Tinos', serif;
 }
 
 .flex .texto {
     font-size: 17px;
     margin-left: 150px;
     margin-right: 150px;
+    font-family: 'Rokkitt', serif;
 }
 
 .flex .img {
@@ -218,6 +233,7 @@ nav a:hover {
     padding-left: 150px;
     padding-right: 150px;
     font-size: 17px;
+    font-family: 'Rokkitt', serif;
 }
 
 :root {
@@ -312,11 +328,13 @@ nav a:hover {
     color: #fff;
     margin-bottom: 25px;
     font-size: 20px;
+    font-family: 'Tinos', serif;
 }
 
 .pie_pagina .grupo_1 .box p {
     color: #efefef;
     margin-bottom: 10px;
+    font-family: 'Rokkitt', serif;
 }
 
 .pie_pagina .grupo_1 .red_social a {
