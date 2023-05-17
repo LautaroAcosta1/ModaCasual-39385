@@ -1,0 +1,73 @@
+@media screen and (max-width:744px) {
+
+    /* HEADER */
+
+    header {
+        @include flex (column, space-between, center);
+        min-height: 70px;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    /* MAIN INICIO */
+
+    .grid_inicio {
+        @include flex (column, center, center);
+        padding-left: 100px;
+        .texto_inicio {
+            font-size: 17px;
+            padding-top: 10px;
+        }
+    }
+
+    /* MAIN CATOLOGO */
+
+    .titulo {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 50px;
+    }
+    
+    .grid {
+        @include grid (none, auto auto, none);
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* MAIN COMO COMPRAR / NOSOTROS */
+
+    .flex {
+        @include flex (column, none, center);
+        text-align: center;
+        .titulo {
+            background-position: center;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            font-size: 70px;
+        }
+    }
+
+    /* MAIN CONTACTO */
+
+    .contactos {
+        @include grid (none, auto auto, none);
+        gap: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    /* FOOTER */
+    .pie_pagina {
+        .grupo_1 {
+            width: 90%;
+            @include grid (none, repeat(1, 1fr), 30px);
+            padding: 35px 0px;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.flex {
+    @include flex (column, none, center);
+    text-align: center;
+    .titulo {
+        font-size: 80px;
+        color: $color_principal_texto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-size: 80px;
+        font-family: 'Tinos', serif;
+    }
+    .texto {
+        font-size: 17px;
+        margin-left: 150px;
+        margin-right: 150px;
+        font-family: 'Rokkitt', serif;
+        color: $color_secundario_texto;
+    }
+    .flex .img {
+        margin-top: 50px;
+    }
+}

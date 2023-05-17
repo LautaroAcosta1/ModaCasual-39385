@@ -1,0 +1,37 @@
+header {
+    @include flex (none, space-between, center);
+    min-height: 70px;
+    padding: 10px;
+    .logo {
+        @include flex (none, none, center);
+        list-style: none;
+        text-decoration: none;
+        img {
+            height: 50px;
+            margin-right: 10px;
+            border-radius: 90%;
+        }
+        .nombre {
+            font-family: 'Tinos', serif;
+            color: $color_principal_texto;
+        }
+    }
+    nav {
+        @include flex (row, none, none);
+        margin-right: 50px;
+        gap: 50px;
+        list-style: none;
+        text-decoration: none;
+        a {
+            font-weight: 600;
+            font-size: 17px;
+            list-style: none;
+            text-decoration: none;
+            font-family: 'Rokkitt', serif;
+            color: $color_principal_texto;
+            &:hover {
+                color: #20dbd8;
+            }
+        }
+    }
+}

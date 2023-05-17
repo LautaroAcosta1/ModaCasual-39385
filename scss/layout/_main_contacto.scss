@@ -1,0 +1,57 @@
+.display_contacto {
+    @include flex (column, center, none);
+    gap: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .texto {
+        color: $color_secundario_texto;
+        text-align: center;
+        padding-left: 150px;
+        padding-right: 150px;
+        font-size: 17px;
+        font-family: 'Rokkitt', serif;
+    }
+}
+
+:root {
+    --primary: #20dbd8
+}
+
+.contactos {
+    @include flex (row, space-between, none);
+    padding-left: 100px;
+    padding-right: 100px;
+    .iconos {
+        @include flex (none, center, center);
+        background-color: #001018;
+        @include tamaño (200px, 200px);
+        border-radius: 30px;
+        border: none;
+        box-shadow: 0 5px 15px -5px #111;
+        cursor: pointer;
+        overflow: hidden;
+        transition: text-shadow 0.5s ease;
+        &:hover {
+            animation: glow 1s infinite alternate;
+            text-shadow: 0 0 30px var(--primary);
+        }
+        a {
+            font-size: 100px;
+            text-decoration: none;
+            color: $color_principal_texto;
+            transition: color 0.5s ease-out;
+            color: var(--primary);
+        }
+    }
+}
+
+/* animacion */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 20px var(--primary);
+    }
+
+    100% {
+        box-shadow: 0 0 50px var(--primary);
+    }
+}

@@ -1,0 +1,59 @@
+.pie_pagina {
+    width: 100%;
+    background-color: #000000;
+    margin-top: 50px;
+    .grupo_1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        @include grid (none, repeat(3, 1fr), 50px);
+        padding: 45px 0px;
+        .box {
+            figure {
+                @include tamaño (100%, 100%);
+                @include flex (none, center, center);
+                img {
+                    width: 250px;
+                    border-radius: 30px;
+                }
+            }
+            h2 {
+                color: $color_principal_texto;
+                margin-bottom: 25px;
+                font-size: 20px;
+                font-family: 'Tinos', serif;
+            }
+            p {
+                color: $color_secundario_texto;
+                margin-bottom: 10px;
+                font-family: 'Rokkitt', serif;
+            }
+            .red_social {
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    @include tamaño (45px, 45px);
+                    line-height: 45px;
+                    color: $color_principal_texto;
+                    margin-right: 10px;
+                    background-color: #001018;
+                    text-align: center;
+                    transition: all 300ms ease;
+                    border-radius: 90%;
+                    &:hover {
+                        color: aqua;
+                    }
+                }
+            }
+        }
+    }
+    .grupo_2 {
+        background-color: #001018;
+        padding: 15px 10px;
+        text-align: center;
+        color: $color_secundario_texto;
+        small {
+            font-size: 15px;
+        }
+    }
+}

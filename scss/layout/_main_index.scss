@@ -1,0 +1,30 @@
+.grid_inicio {
+    @include grid (100%, 50% 50%, none);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    padding-right: 100px;
+    .imagen_inicio {
+        @include tamaño (450px, 600px);
+        justify-self: center;
+        border-radius: 50px;
+    }
+    .titulo_inicio {
+        color: $color_principal_texto;
+        margin-top: 50px;
+        font-size: 80px;
+        grid-column: -2/-1;
+        grid-row: 1/-1;
+        font-family: 'Tinos', serif;
+    }
+    .texto_inicio {
+        color: $color_secundario_texto;
+        grid-column: -2/-1;
+        grid-row: 1/-1;
+        padding-top: 200px;
+        justify-self: start;
+        font-size: 17px;
+        font-family: 'Rokkitt', serif;
+    }
+}

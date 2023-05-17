@@ -1,0 +1,94 @@
+@media screen and (max-width:320px) {
+
+    /* HEADER */
+
+    header {
+        @include flex (column, none, center);
+        gap: 30px;
+        nav {
+            @include flex (column, none, center);
+            gap: 20px;
+            list-style: none;
+            text-decoration: none;
+            margin-left: 50px;
+        }
+    }
+
+    /* MAIN INICIO */
+
+    .grid_inicio {
+        @include flex (column, center, center);
+        padding-left: 100px;
+        .imagen_inicio {
+            @include tamaño (245px, 320px);
+            justify-self: center;
+            border-radius: 50px;
+        }
+        .titulo_inicio {
+            margin-top: 50px;
+            font-size: 50px;
+            grid-column: -2/-1;
+            grid-row: 1/-1;
+        }
+        .texto_inicio {
+            font-size: 12px;
+        }
+    }
+    
+     /* MAIN CATALOGO */
+
+    .titulo {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 45px;
+    }
+
+    .grid {
+        @include grid (none, auto, none);
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    /* MAIN COMO COMPRAR / NOSOTROS */
+    .flex {
+        .titulo {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            font-size: 50px;
+        }
+        .texto {
+            font-size: 12px;
+            width: 80%;
+        }
+        .img {
+            margin-top: 50px;
+            width: 90%;
+        }
+    }
+
+    /* CONTACTO */
+
+    .display_contacto {
+        @include flex (column, center, none);
+        gap: 1px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        .texto {
+            text-align: center;
+            font-size: 12px;
+            width: 100%;
+            padding: 100px;
+            padding-left: 55px;
+            p {
+                width: 220px;
+            }
+        }
+        .contactos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
