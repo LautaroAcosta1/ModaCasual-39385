@@ -150,11 +150,11 @@ header nav a:hover {
   color: #fff;
   transform: translateY(-5px);
 }
-.grid .producto button .producto h2 {
+.grid .producto h2 {
   color: #fff;
   font-family: "Tinos", serif;
 }
-.grid .producto button .producto p {
+.grid .producto p {
   font-size: 18px;
   color: #f5f5dc;
   font-family: "Rokkitt", serif;
