@@ -1,4 +1,4 @@
-@media screen and (max-width:744px) {
+@media (max-width:744px) {
 
     /* HEADER */
 
@@ -45,10 +45,21 @@
             background-position: center;
             -webkit-background-clip: text;
             background-clip: text;
-            color: transparent;
+            color: $color_secundario_texto;
             margin-top: 50px;
             margin-bottom: 50px;
             font-size: 70px;
+        }
+        .texto {
+            font-size: 18px;
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-bottom: 60px;
+            font-family: 'Rokkitt', serif;
+            color: $color_secundario_texto;
+        }
+        .flex .img {
+            margin-top: 50px;
         }
     }
 
